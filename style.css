@@ -1,0 +1,149 @@
+html,
+body,
+.container {
+  width: 100%;
+  height: 100%;
+  min-width: 500px;
+  min-height: 300px;
+  margin: 0;
+  padding: 0;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.container {
+  background-color: #007ced;
+  background: linear-gradient(to bottom, #007ced 1%, #cce7ff 100%);
+}
+
+.intro-stripe {
+  width: 100%;
+  position: absolute;
+  z-index: 5;
+  padding: 0;
+  background-color: rgba(0, 128, 0, 0.747);
+  margin: 0;
+  text-align: center;
+  color: red;
+  font-size: 0.7em;
+}
+#cloud-intro {
+  position: relative;
+  height: 100%;
+  background: url(https://static.radulescu.me/examples/clouds/clouds1000.png);
+  background: url(https://static.radulescu.me/examples/clouds/clouds1000.png) 0
+      200px,
+    url(https://static.radulescu.me/examples/clouds/clouds1200_1.png) 0 300px,
+    url(https://static.radulescu.me/examples/clouds/clouds1000_blur3.png) 100px
+      250px;
+  animation: wind 20s linear infinite;
+}
+@keyframes wind {
+  0% {
+    background-position: 0 200px, 0 300px, 100px 250px;
+  }
+  100% {
+    background-position: 1000px 200px, 1200px 300px, 1100px 250px;
+  }
+}
+
+@keyframes swivel {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+.house_img {
+  width: 45%;
+  position: absolute;
+  top: 15%;
+  height: 60%;
+  animation: swivel 10s infinite linear;
+}
+.bookcase_img {
+  width: 35%;
+  position: relative;
+  top: 15%;
+  height: 60%;
+  cursor: pointer;
+  margin-left: 12%;
+  animation: swivel 10s infinite linear;
+}
+
+@keyframes modalAnimation {
+  0% {
+    padding-top: 0;
+  }
+  100% {
+    padding-top: 100px;
+  }
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  bottom: 10%;
+  width: 100%; /* Full width */
+  height: 88%; /* Full height */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-image: url(a2040ebda73d0a603c42bf12e80b4f16.jpg);
+  margin: auto;
+  background-position: initial;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border: 1px solid #888;
+  width: 92%;
+  height: 100%;
+  border: solid blue 5px;
+}
+.modal-text-container {
+  position: relative;
+  height: inherit;
+  border: solid red 5px;
+}
+.modal-left-text {
+  width: 40%;
+  margin-left: 7%;
+  margin-top: 50px;
+  float: left;
+  text-align: center;
+  border: solid red 5px;
+}
+.modal-right-text {
+  width: 41%;
+  margin-right: 3%;
+  margin-top: 50px;
+  text-align: center;
+  float: right;
+  border: solid red 5px;
+}
+/* The Close Button */
+.close {
+  color: #000000;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(255, 0, 0);
+  text-decoration: none;
+  cursor: pointer;
+}
