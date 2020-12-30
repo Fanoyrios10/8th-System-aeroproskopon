@@ -29,12 +29,9 @@ body,
 #cloud-intro {
   position: relative;
   height: 100%;
-  background: url(https://static.radulescu.me/examples/clouds/clouds1000.png);
-  background: url(https://static.radulescu.me/examples/clouds/clouds1000.png) 0
-      200px,
-    url(https://static.radulescu.me/examples/clouds/clouds1200_1.png) 0 300px,
-    url(https://static.radulescu.me/examples/clouds/clouds1000_blur3.png) 100px
-      250px;
+  background: url(clouds1000.png);
+  background: url(clouds1000.png) 0 200px, url(clouds1200_1.png) 0 300px,
+    url(clouds1000_blur3.png) 100px 250px;
   animation: wind 20s linear infinite;
 }
 @keyframes wind {
@@ -62,19 +59,13 @@ body,
 }
 
 .house_img {
-  width: 45%;
+  width: 50%;
   position: absolute;
   top: 15%;
-  height: 60%;
-  animation: swivel 10s infinite linear;
-}
-.bookcase_img {
-  width: 35%;
-  position: relative;
-  top: 15%;
+  left: 25%;
+  right: 25%;
   height: 60%;
   cursor: pointer;
-  margin-left: 12%;
   animation: swivel 10s infinite linear;
 }
 
@@ -102,7 +93,7 @@ body,
 
 /* Modal Content */
 .modal-content {
-  background-image: url(a2040ebda73d0a603c42bf12e80b4f16.jpg);
+  background-image: url(open_book.jpg);
   margin: auto;
   background-position: initial;
   background-repeat: no-repeat;
