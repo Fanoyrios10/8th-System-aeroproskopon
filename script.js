@@ -75,14 +75,14 @@ for (let index = 0; index < redTableC.length; index++) {
   tdOne.innerHTML = x;
   let tdTwo = document.createElement("td");
   tdTwo.innerHTML = redTableC[index];
-  tdTwo.id = "red_table_index_" + x;
+  tdTwo.id = "red_table_index_" + 0 + x;
   tdTwo.style.cursor = "pointer";
   trc.appendChild(tdOne);
   trc.appendChild(tdTwo);
   document.getElementById("red_table_i").appendChild(trc);
   tdTwo.addEventListener("click", function () {
     let redIndexId = tdTwo.id;
-    let redIndexIdFinalNumber = redIndexId.substr(redIndexId.length - 1);
+    let redIndexIdFinalNumber = redIndexId.substr(redIndexId.length - 2);
     let redItemId = document.getElementById(
       `red_table_item_${redIndexIdFinalNumber}`
     );
@@ -102,14 +102,14 @@ for (let index = 0; index < brownTableC.length; index++) {
   tdOne.innerHTML = x;
   let tdTwo = document.createElement("td");
   tdTwo.innerHTML = brownTableC[index];
-  tdTwo.id = "brown_table_index_" + x;
+  tdTwo.id = "brown_table_index_" + 0 + x;
   tdTwo.style.cursor = "pointer";
   trc.appendChild(tdOne);
   trc.appendChild(tdTwo);
   document.getElementById("brown_table_i").appendChild(trc);
   tdTwo.addEventListener("click", function () {
     let brownIndexId = tdTwo.id;
-    let brownIndexIdFinalNumber = brownIndexId.substr(brownIndexId.length - 1);
+    let brownIndexIdFinalNumber = brownIndexId.substr(brownIndexId.length - 2);
     let brownItemId = document.getElementById(
       `brown_table_item_${brownIndexIdFinalNumber}`
     );
@@ -156,7 +156,7 @@ btn_red.onclick = function () {
   }
   setTimeout(function () {
     red_table.style.display = "block";
-  }, 1000);
+  }, 200);
 };
 
 btn_brown.onclick = function () {
@@ -177,7 +177,7 @@ btn_brown.onclick = function () {
   }
   setTimeout(function () {
     brown_table.style.display = "block";
-  }, 1000);
+  }, 200);
 };
 
 // // When the user clicks on <span> (x), close the modal
