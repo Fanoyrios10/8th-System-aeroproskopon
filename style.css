@@ -58,14 +58,14 @@ body,
   }
 }
 
+.picture_container {
+  margin: auto;
+  text-align: center;
+  padding-top: 150px;
+}
 .house_img {
-  width: 50%;
-  position: absolute;
-  top: 15%;
-  left: 25%;
-  right: 25%;
-  height: 60%;
-  cursor: pointer;
+  width: 600px;
+  height: 400px;
   animation: swivel 10s infinite linear;
 }
 
@@ -93,42 +93,38 @@ body,
 
 /* Modal Content */
 .modal-content {
-  background-image: url(open_book.jpg);
+  background-image: url(open_book_2.jpg);
   margin: auto;
   background-position: initial;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  border: 1px solid #888;
   width: 92%;
   height: 100%;
-  border: solid blue 5px;
 }
 .modal-text-container {
   position: relative;
   height: inherit;
-  border: solid red 5px;
 }
 .modal-left-text-index {
   width: 40%;
   margin-left: 7%;
-  margin-top: 50px;
-  height: 82%;
+  margin-top: 70px;
+  height: 85%;
   float: left;
   text-align: center;
-  border: solid red 5px;
   overflow-y: scroll;
 }
 .modal-right-text-index {
   width: 41%;
   margin-right: 3%;
-  margin-top: 50px;
-  text-align: center;
+  height: 85%;
+  margin-top: 60px;
   float: right;
-  border: solid red 5px;
+  overflow-y: scroll;
 }
 /* The Close Button */
 .close {
-  color: #000000;
+  color: rgb(0, 0, 0);
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -142,16 +138,78 @@ body,
 }
 
 table {
-  border-collapse: collapse;
   width: 100%;
-}
-
-td,
-th {
-  border: 1px solid #dddddd;
+  border: 5px solid green;
   text-align: center;
-  padding: 8px;
+  padding: 10px;
+  border-collapse: collapse;
 }
 
+table td,
+table th {
+  border: 5px solid grey;
+  padding: 5px;
+}
+
+th {
+  border: 5px solid grey;
+  background-color: teal;
+  font-size: x-large;
+}
+
+tr:nth-child(odd) {
+  background-color: tomato;
+}
 tr:nth-child(even) {
+  background-color: green;
+}
+
+tr:hover:nth-child(odd) {
+  color: white;
+  background-color: black;
+  transition: 1.5s;
+}
+
+tr:hover:nth-child(even) {
+  color: red;
+  background-color: blue;
+  transition: 1.5s;
+}
+
+tr:not(:hover):nth-child(odd) {
+  transition: 1.5s;
+}
+
+tr:not(:hover):nth-child(even) {
+  transition: 1.5s;
+}
+
+ol {
+  text-align: justify;
+}
+ul {
+  text-align: justify;
+}
+
+#red_table {
+  display: none;
+}
+
+#brown_table {
+  display: none;
+}
+
+.tables {
+  display: none;
+}
+.table_items {
+  display: none;
+  padding-right: 25px;
+  text-align: justify;
+  font-size: large;
+}
+
+h2 {
+  text-align: center;
+  text-decoration: underline red;
 }
