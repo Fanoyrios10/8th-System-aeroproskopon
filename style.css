@@ -105,8 +105,9 @@ body,
 .modal-left-text-index {
   width: 40%;
   margin-left: 7%;
-  margin-top: 3%;
-  height: 88%;
+  margin-top: 6%;
+  border: 10px solid blue;
+  height: 82%;
   float: left;
   text-align: center;
   overflow-y: auto;
@@ -114,8 +115,10 @@ body,
 .modal-right-text-index {
   width: 41%;
   margin-right: 3%;
-  height: 85%;
-  margin-top: 3%;
+  height: 82%;
+  margin-top: 6%;
+  margin-bottom: 6%;
+  border: 10px solid blue;
   float: right;
   overflow-y: auto;
 }
@@ -125,6 +128,7 @@ body,
   float: right;
   font-size: 28px;
   font-weight: bold;
+  padding: 20px;
 }
 
 .close:hover,
@@ -201,4 +205,14 @@ ul {
 h2 {
   text-align: center;
   text-decoration: underline red;
+}
+
+#choose_something_text {
+  text-align: center;
+  border: red solid 5px;
+  font-weight: bolder;
+  font-size: xx-large;
+}
+area {
+  cursor: pointer;
 }
