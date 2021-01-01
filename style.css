@@ -106,7 +106,6 @@ body,
   width: 40%;
   margin-left: 7%;
   margin-top: 6%;
-  border: 10px solid blue;
   height: 82%;
   float: left;
   text-align: center;
@@ -118,7 +117,6 @@ body,
   height: 82%;
   margin-top: 6%;
   margin-bottom: 6%;
-  border: 10px solid blue;
   float: right;
   overflow-y: auto;
 }
@@ -198,6 +196,7 @@ ul {
 .table_items {
   display: none;
   padding-right: 6%;
+  padding-left: 3%;
   text-align: justify;
   font-size: large;
 }
@@ -209,7 +208,6 @@ h2 {
 
 #choose_something_text {
   text-align: center;
-  border: red solid 5px;
   font-weight: bolder;
   font-size: xx-large;
 }
