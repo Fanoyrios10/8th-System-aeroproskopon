@@ -416,3 +416,5 @@ window.onclick = function (event) {
     chooseSomething.style.display = "block";
   }
 };
+
+alert("Καλή Χρονιά να έχετε!!!");
