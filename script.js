@@ -298,6 +298,12 @@ const btn_blue = document.getElementById("blue");
 const btn_green = document.getElementById("green");
 const btn_gray = document.getElementById("gray");
 
+const btn_red_2 = document.getElementById("red_2");
+const btn_brown_2 = document.getElementById("brown_2");
+const btn_blue_2 = document.getElementById("blue_2");
+const btn_green_2 = document.getElementById("green_2");
+const btn_gray_2 = document.getElementById("gray_2");
+
 // // Get the <span> element that closes the modal
 const span = document.getElementsByClassName("close")[0];
 
@@ -387,6 +393,91 @@ btn_green.onclick = function () {
   }, 200);
 };
 
+btn_red_2.onclick = function () {
+  modal.style.display = "block";
+  modal.style.animationName = "modalAnimation";
+  modal.style.animationDuration = "2s";
+  for (let i = 0; i < allTables.length; i++) {
+    let element = allTables[i];
+    element.style.display = "none";
+  }
+  for (let i = 0; i < allTableItmes.length; i++) {
+    let element = allTableItmes[i];
+    element.style.display = "none";
+  }
+  setTimeout(function () {
+    red_table.style.display = "block";
+  }, 200);
+};
+
+btn_brown_2.onclick = function () {
+  modal.style.display = "block";
+  modal.style.animationName = "modalAnimation";
+  modal.style.animationDuration = "2s";
+  for (let i = 0; i < allTables.length; i++) {
+    let element = allTables[i];
+    element.style.display = "none";
+  }
+  for (let i = 0; i < allTableItmes.length; i++) {
+    let element = allTableItmes[i];
+    element.style.display = "none";
+  }
+  setTimeout(function () {
+    brown_table.style.display = "block";
+  }, 200);
+};
+
+btn_blue_2.onclick = function () {
+  modal.style.display = "block";
+  modal.style.animationName = "modalAnimation";
+  modal.style.animationDuration = "2s";
+  for (let i = 0; i < allTables.length; i++) {
+    let element = allTables[i];
+    element.style.display = "none";
+  }
+  for (let i = 0; i < allTableItmes.length; i++) {
+    let element = allTableItmes[i];
+    element.style.display = "none";
+  }
+  setTimeout(function () {
+    blue_table.style.display = "block";
+  }, 200);
+};
+
+btn_gray_2.onclick = function () {
+  modal.style.display = "block";
+  modal.style.animationName = "modalAnimation";
+  modal.style.animationDuration = "2s";
+  for (let i = 0; i < allTables.length; i++) {
+    let element = allTables[i];
+    element.style.display = "none";
+  }
+  for (let i = 0; i < allTableItmes.length; i++) {
+    let element = allTableItmes[i];
+    element.style.display = "none";
+  }
+  setTimeout(function () {
+    gray_table.style.display = "block";
+  }, 200);
+};
+
+btn_green_2.onclick = function () {
+  modal.style.display = "block";
+  modal.style.animationName = "modalAnimation";
+  modal.style.animationDuration = "2s";
+  for (let i = 0; i < allTables.length; i++) {
+    let element = allTables[i];
+    element.style.display = "none";
+  }
+  for (let i = 0; i < allTableItmes.length; i++) {
+    let element = allTableItmes[i];
+    element.style.display = "none";
+  }
+  setTimeout(function () {
+    green_table.style.display = "block";
+  }, 200);
+};
+
 // // When the user clicks on <span> (x), close the modal
 span.onclick = function () {
   modal.style.display = "none";
@@ -417,4 +508,16 @@ window.onclick = function (event) {
   }
 };
 
+setInterval(function () {
+  let music = new Audio("mixkit-jumping-around-8.mp3");
+  music.play();
+}, 143000);
+
 alert("Καλή Χρονιά να έχετε!!!");
+
+function initialMusic() {
+  let music = new Audio("mixkit-jumping-around-8.mp3");
+  music.play();
+}
+
+initialMusic();
