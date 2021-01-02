@@ -503,14 +503,16 @@ window.onclick = function (event) {
 };
 
 const userMusic = confirm(
-  "Θέλετε να παίξει μουσική καθλως βρισκόσαστε στην ιστοσελίδα΄\nΠατήστε OK για ναι ή Άκυρο για όχι"
+  "Θέλετε να παίξει μουσική καθλως βρισκόσαστε στην ιστοσελίδα\nΠατήστε OK για ναι ή Άκυρο για όχι"
 );
 
 if (userMusic) {
-  let music = new Audio("mixkit-jumping-around-8.mp3");
-  music.play();
+  setTimeout(function () {
+    let music = new Audio("mixkit-jumping-around-8.mp3");
+    music.play();
+  }, 1000);
   setInterval(function () {
     let music = new Audio("mixkit-jumping-around-8.mp3");
     music.play();
-  }, 143000);
+  }, 144000);
 }
