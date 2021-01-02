@@ -507,8 +507,6 @@ setInterval(function () {
   music.play();
 }, 143000);
 
-alert("Καλή Χρονιά να έχετε!!!");
-
 function initialMusic() {
   let music = new Audio("mixkit-jumping-around-8.mp3");
   music.play();
