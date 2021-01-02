@@ -8,8 +8,12 @@ body,
 }
 
 .container {
-  background-color: #007ced;
-  background: linear-gradient(to bottom, #007ced 1%, #cce7ff 100%);
+  background-color: rgb(0, 124, 237);
+  background: linear-gradient(
+    to bottom,
+    rgb(0, 124, 237) 1%,
+    rgb(204, 231, 255) 100%
+  );
 }
 
 .intro-stripe {
@@ -82,25 +86,24 @@ body,
 }
 
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 150px; /* Location of the box */
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 150px;
   left: 0;
   top: 0;
   bottom: 10%;
-  width: 100%; /* Full width */
-  height: 84%; /* Full height */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  width: 100%;
+  height: 89%;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
-/* Modal Content */
 .modal-content {
   background-image: url(open_book_2.jpg);
   margin: auto;
   background-position: initial;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 100% 87%;
   width: 92%;
   height: 100%;
 }
@@ -112,7 +115,7 @@ body,
   width: 40%;
   margin-left: 7%;
   margin-top: 3%;
-  height: 82%;
+  height: 72%;
   float: left;
   text-align: center;
   overflow-y: auto;
@@ -120,8 +123,8 @@ body,
 .modal-right-text-index {
   width: 41%;
   margin-right: 3%;
-  height: 82%;
-  margin-top: 3%;
+  height: 72%;
+  margin-top: 2%;
   margin-bottom: 6%;
   float: right;
   overflow-y: auto;
