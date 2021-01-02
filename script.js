@@ -502,14 +502,15 @@ window.onclick = function (event) {
   }
 };
 
-setInterval(function () {
-  let music = new Audio("mixkit-jumping-around-8.mp3");
-  music.play();
-}, 143000);
+const userMusic = confirm(
+  "Θέλετε να παίξει μουσική καθλως βρισκόσαστε στην ιστοσελίδα΄\nΠατήστε OK για ναι ή Άκυρο για όχι"
+);
 
-function initialMusic() {
+if (userMusic) {
   let music = new Audio("mixkit-jumping-around-8.mp3");
   music.play();
+  setInterval(function () {
+    let music = new Audio("mixkit-jumping-around-8.mp3");
+    music.play();
+  }, 143000);
 }
-
-initialMusic();
