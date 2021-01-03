@@ -502,17 +502,18 @@ window.onclick = function (event) {
   }
 };
 
-const userMusic = confirm(
-  "Θέλετε να παίξει μουσική καθλως βρισκόσαστε στην ιστοσελίδα\nΠατήστε OK για ναι ή Άκυρο για όχι"
-);
+const playButton = document.getElementById("playButton");
+const playButtonDisabled = document.getElementById("playButtonDisabled");
+const pauseButton = document.getElementById("pauseButton");
+const pauseButtonDisabled = document.getElementById("pauseButtonDisabled");
 
-if (userMusic) {
+playButton.addEventListener("click", function () {
   setTimeout(function () {
     let music = new Audio("mixkit-jumping-around-8.mp3");
     music.play();
   }, 1000);
-  setInterval(function () {
-    let music = new Audio("mixkit-jumping-around-8.mp3");
-    music.play();
-  }, 144000);
-}
+  playButton.style.display = "none";
+  playButtonDisabled.style.display = "inline-block";
+  pauseButtonDisabled.style.display = "none";
+  pauseButton.style.display = "inline-block";
+});
