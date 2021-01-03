@@ -260,12 +260,6 @@ area {
   }
 }
 
-#playText {
-  font-size: 20px;
-  font-family: Comic Sans MS;
-  color: blue;
-}
-
 #playButton {
   cursor: pointer;
   display: inline-block;
@@ -274,20 +268,17 @@ area {
   display: inline-block;
   cursor: not-allowed;
 }
-#pauseText {
-  font-size: 20px;
-  color: red;
-}
 #pauseButton {
   cursor: pointer;
+  padding: 0;
   display: none;
 }
 #playButtonDisabled {
   display: none;
   cursor: not-allowed;
 }
-.fa-stop-circle {
-  font-size: 26px;
+.fa-stop {
+  font-size: 25px;
 }
 #stopButtonDisabled {
   display: inline-block;
@@ -296,4 +287,18 @@ area {
 #stopButton {
   display: none;
   cursor: pointer;
+}
+
+button {
+  margin-left: 20px;
+  width: 80px;
+  height: 40px;
+}
+.fa-play {
+  font-size: 25px;
+  color: blue;
+}
+.fa-pause {
+  font-size: 25px;
+  color: red;
 }
