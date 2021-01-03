@@ -502,18 +502,45 @@ window.onclick = function (event) {
   }
 };
 
+let music = new Audio("Jungle Windows Start.wav");
 const playButton = document.getElementById("playButton");
 const playButtonDisabled = document.getElementById("playButtonDisabled");
 const pauseButton = document.getElementById("pauseButton");
 const pauseButtonDisabled = document.getElementById("pauseButtonDisabled");
+const stopButtonDisabled = document.getElementById("stopButtonDisabled");
+const stopButton = document.getElementById("stopButton");
 
 playButton.addEventListener("click", function () {
-  setTimeout(function () {
-    let music = new Audio("mixkit-jumping-around-8.mp3");
-    music.play();
-  }, 1000);
+  music.play();
   playButton.style.display = "none";
   playButtonDisabled.style.display = "inline-block";
   pauseButtonDisabled.style.display = "none";
   pauseButton.style.display = "inline-block";
+  stopButton.style.display = "inline-block";
+  stopButtonDisabled.style.display = "none";
+});
+
+music.onended = function () {
+  // playButton.style.display = "inline-block";
+  // playButtonDisabled.style.display = "none";
+  // pauseButtonDisabled.style.display = "inline-block";
+  // pauseButton.style.display = "none";
+  music.play();
+};
+pauseButton.addEventListener("click", function () {
+  pauseButton.style.display = "none";
+  pauseButtonDisabled.style.display = "inline-block";
+  playButton.style.display = "inline-block";
+  playButtonDisabled.style.display = "none";
+  music.pause();
+});
+stopButton.addEventListener("click", function () {
+  music.pause();
+  music.currentTime = 0;
+  stopButton.style.display = "none";
+  stopButtonDisabled.style.display = "inline-block";
+  playButton.style.display = "inline-block";
+  playButtonDisabled.style.display = "none";
+  pauseButton.style.display = "none";
+  pauseButtonDisabled.style.display = "inline-block";
 });

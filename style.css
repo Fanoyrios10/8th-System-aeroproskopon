@@ -266,11 +266,21 @@ area {
   color: red;
 }
 #pauseButton {
-  display: inline-block;
   cursor: pointer;
   display: none;
 }
 #playButtonDisabled {
   display: none;
   cursor: not-allowed;
+}
+.fa-stop-circle {
+  font-size: 26px;
+}
+#stopButtonDisabled {
+  display: inline-block;
+  cursor: not-allowed;
+}
+#stopButton {
+  display: none;
+  cursor: pointer;
 }
