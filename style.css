@@ -9,6 +9,19 @@
   src: url("font/comicbd.ttf");
 }
 
+@font-face {
+  font-family: Comic Sans MS;
+  font-style: italic;
+  src: url("font/comici.ttf");
+}
+
+@font-face {
+  font-family: Comic Sans MS;
+  font-style: italic;
+  font-weight: bold;
+  src: url("font/comicz.ttf");
+}
+
 html,
 body,
 .container {
@@ -41,9 +54,10 @@ body,
 #cloud-intro {
   position: relative;
   height: 100%;
-  background: url(clouds1000.png);
-  background: url(clouds1000.png) 0 200px, url(clouds1200_1.png) 0 300px,
-    url(clouds1000_blur3.png) 100px 250px;
+  background: url(Images/clouds1000.png);
+  background: url(Images/clouds1000.png) 0 200px,
+    url(Images/clouds1200_1.png) 0 300px,
+    url(Images/clouds1000_blur3.png) 100px 250px;
   animation: wind 20s linear infinite;
 }
 @keyframes wind {
@@ -110,7 +124,7 @@ body,
 }
 
 .modal-content {
-  background-image: url(open_book_2.jpg);
+  background-image: url(Images/open_book_2.jpg);
   margin: auto;
   background-position: initial;
   background-repeat: no-repeat;
@@ -125,7 +139,7 @@ body,
 .modal-left-text-index {
   width: 40%;
   margin-left: 7%;
-  margin-top: 3%;
+  margin-top: 4%;
   height: 72%;
   float: left;
   text-align: center;
@@ -140,7 +154,6 @@ body,
   float: right;
   overflow-y: auto;
 }
-/* The Close Button */
 .close {
   color: rgb(0, 0, 0);
   float: right;
@@ -232,7 +245,7 @@ h2 {
   font-size: xx-large;
 }
 area {
-  cursor: url("pin.png"), auto;
+  cursor: url("Images/pin.png"), auto;
 }
 #house_modal_2 {
   display: none;

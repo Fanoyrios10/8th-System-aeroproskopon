@@ -502,7 +502,7 @@ window.onclick = function (event) {
   }
 };
 
-let music = new Audio("Jungle Windows Start.wav");
+let music = new Audio("Audio/mixkit-jumping-around-8.mp3");
 const playButton = document.getElementById("playButton");
 const playButtonDisabled = document.getElementById("playButtonDisabled");
 const pauseButton = document.getElementById("pauseButton");
