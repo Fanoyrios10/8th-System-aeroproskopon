@@ -62,7 +62,7 @@ body,
   padding: 0;
   background-color: rgba(255, 251, 0, 0.747);
   color: red;
-  font-size: 17px;
+  font-size: 15px;
 }
 .bottomStripeHeader {
   width: 99.9%;
@@ -74,7 +74,7 @@ body,
 }
 
 .bottomStripeLeft {
-  width: 33%;
+  width: 35%;
   height: 52px;
   float: left;
   border-right: black solid 1px;
@@ -86,7 +86,7 @@ body,
   border-right: black solid 1px;
 }
 .bottomStripeRight {
-  width: 33%;
+  width: 31%;
   height: 60px;
   float: right;
 }
@@ -104,6 +104,11 @@ body,
   bottom: 0;
   border-top: black solid 1px;
   text-align: center;
+}
+.bottomStripeCenterText {
+  position: relative;
+  text-align: center;
+  top: -17px;
 }
 
 .fa-facebook-square {
