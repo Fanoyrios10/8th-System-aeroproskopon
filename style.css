@@ -51,6 +51,67 @@ body,
   color: red;
   font-size: 0.7em;
 }
+
+.bottomStripe {
+  width: 100%;
+  height: 125px;
+  position: absolute;
+  bottom: 0;
+  z-index: 0;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(255, 251, 0, 0.747);
+  color: red;
+  font-size: 17px;
+}
+.bottomStripeHeader {
+  width: 99.9%;
+  height: 20px;
+  position: relative;
+  top: 0;
+  text-align: center;
+  border-bottom: black solid 1px;
+}
+
+.bottomStripeLeft {
+  width: 33%;
+  height: 52px;
+  float: left;
+  border-right: black solid 1px;
+}
+.bottomStripeCenter {
+  width: 33%;
+  height: 52px;
+  float: left;
+  border-right: black solid 1px;
+}
+.bottomStripeRight {
+  width: 33%;
+  height: 60px;
+  float: right;
+}
+.contactInformation {
+  padding-left: 10px;
+  position: relative;
+  text-align: center;
+  top: -17px;
+}
+.bottomStripeFooter {
+  width: 99.9%;
+  height: 52px;
+  word-spacing: 20px;
+  position: absolute;
+  bottom: 0;
+  border-top: black solid 1px;
+  text-align: center;
+}
+
+.fa-facebook-square {
+  color: blue;
+}
+.fa-map-marked-alt {
+  color: blue;
+}
 #cloud-intro {
   position: relative;
   height: 100%;
@@ -85,7 +146,7 @@ body,
 }
 
 .picture_container {
-  margin: auto;
+  margin: auto 0;
   text-align: center;
   padding-top: 200px;
 }
@@ -259,7 +320,11 @@ area {
     display: block;
   }
 }
-
+@media screen and (max-height: 666px) {
+  #house_modal {
+    height: 300px;
+  }
+}
 #playButton {
   cursor: pointer;
   display: inline-block;
