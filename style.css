@@ -62,12 +62,12 @@ body,
   margin: 0;
   padding: 0;
   background-color: rgba(255, 251, 0, 0.747);
-  color: red;
+  color: green;
   font-size: 15px;
 }
 .bottomStripeHeader {
   width: 99.9%;
-  height: 20px;
+  height: 1px;
   position: relative;
   top: 0;
   text-align: center;
@@ -75,7 +75,7 @@ body,
 }
 
 .bottomStripeLeft {
-  width: 35%;
+  width: 33%;
   height: 52px;
   float: left;
   border-right: black solid 1px;
@@ -87,13 +87,14 @@ body,
   border-right: black solid 1px;
 }
 .bottomStripeRight {
-  width: 31%;
+  width: 33%;
   height: 60px;
   float: right;
 }
 .contactInformation {
   padding-left: 10px;
   position: relative;
+  font-weight: bold;
   text-align: center;
   top: -17px;
 }
@@ -108,10 +109,41 @@ body,
 }
 .bottomStripeCenterText {
   position: relative;
+  font-weight: bold;
   text-align: center;
   top: -17px;
 }
-
+@media screen and (max-width: 2500px) and (min-height: 1000px) {
+  .bottomStripe {
+    height: 180px;
+  }
+  .bottomStripeHeader {
+    height: 20px;
+  }
+  .bottomStripeHeader h3 {
+    font-size: 25px;
+    letter-spacing: 5px;
+    position: initial;
+  }
+  .bottomStripeLeft {
+    height: 82px;
+  }
+  .bottomStripeCenter {
+    height: 82px;
+  }
+  .bottomStripeRight {
+    height: 82px;
+  }
+  .contactInformation {
+    font-size: 18px;
+  }
+  .bottomStripeCenterText {
+    font-size: 18px;
+  }
+  .bottomStripeRight p {
+    font-size: 18px;
+  }
+}
 .fa-facebook-square {
   color: blue;
 }
