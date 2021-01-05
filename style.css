@@ -113,7 +113,10 @@ body,
   text-align: center;
   top: -17px;
 }
-@media screen and (max-width: 2500px) and (min-height: 1000px) {
+.bottomBreaks {
+  display: none;
+}
+@media screen and (max-width: 2500px) and (min-height: 800px) {
   .bottomStripe {
     height: 180px;
   }
@@ -142,6 +145,9 @@ body,
   }
   .bottomStripeRight p {
     font-size: 18px;
+  }
+  .bottomBreaks {
+    display: block;
   }
 }
 .fa-facebook-square {
