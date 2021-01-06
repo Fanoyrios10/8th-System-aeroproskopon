@@ -687,6 +687,21 @@ playButton.addEventListener("click", function () {
   stopButtonDisabled.style.display = "none";
 });
 
+track1.onended = function () {
+  track1.play();
+};
+track2.onended = function () {
+  track2.play();
+};
+track3.onended = function () {
+  track3.play();
+};
+track4.onended = function () {
+  track4.play();
+};
+track5.onended = function () {
+  track5.play();
+};
 // music.onended = function () {
 //   // playButton.style.display = "inline-block";
 //   // playButtonDisabled.style.display = "none";
