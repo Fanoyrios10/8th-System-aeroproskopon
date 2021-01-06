@@ -28,11 +28,10 @@ body,
   height: 100%;
   margin: 0;
   padding: 0;
-  display: flexbox;
   font-family: Comic Sans MS;
 }
 
-.container {
+#cont {
   background-color: rgb(0, 124, 237);
   background: linear-gradient(
     to bottom,
@@ -116,7 +115,12 @@ body,
 .bottomBreaks {
   display: none;
 }
-@media screen and (max-width: 2500px) and (min-height: 800px) {
+#visitorCounter {
+  position: absolute;
+  top: 45%;
+  display: none;
+}
+@media screen and (min-height: 800px) {
   .bottomStripe {
     height: 180px;
   }
@@ -397,9 +401,16 @@ area {
   cursor: pointer;
 }
 
+select {
+  height: 35px;
+}
+option {
+  height: 40px;
+}
+
 button {
-  margin-left: 20px;
-  width: 80px;
+  margin-left: 10px;
+  width: 60px;
   height: 40px;
 }
 .fa-play {

@@ -1,5 +1,5 @@
 "use strict";
-
+let x = document.getElementById("visitorCounter");
 const redTableC = [
   "Φιλότεχνου",
   "Φίλου της λογοτεχνίας",
@@ -279,6 +279,47 @@ for (let index = 0; index < greenTableC.length; index++) {
   });
 }
 
+const trackList = document.querySelector("select");
+const container = document.getElementById("cont");
+const buttons = document.getElementsByTagName("button");
+const stopSymbol = document.getElementsByClassName("fa-stop");
+const time = new Date().toLocaleTimeString();
+let hour;
+let amPm;
+if (time.length === 10) {
+  hour = time.substr(0, 1);
+  amPm = time.substr(8, 10);
+  hour = Number(hour);
+  console.log(hour, amPm);
+} else {
+  hour = time.substr(0, 2);
+  amPm = time.substr(9, 10);
+  hour = Number(hour);
+  console.log(hour, amPm);
+}
+
+if (
+  (hour >= 8 && amPm === "PM") ||
+  (hour <= 6 && amPm === "AM") ||
+  (hour === 12 && amPm === "AM")
+) {
+  container.style.background = `linear-gradient(
+    to bottom,
+    rgb(79, 105, 136) 5%,
+    rgb(0, 0, 0) 100%
+  )`;
+  for (let index = 0; index < buttons.length; index++) {
+    let button = buttons[index];
+    button.style.backgroundColor = "black";
+  }
+  for (let index = 0; index < stopSymbol.length; index++) {
+    let stop = stopSymbol[index];
+    stop.style.color = "white";
+  }
+  trackList.style.backgroundColor = "black";
+  trackList.style.color = "white";
+}
+
 const modal = document.getElementById("myModal");
 const leftText = document.getElementById("modal-left-text");
 const rightText = document.getElementById("modal-right-text");
@@ -502,7 +543,11 @@ window.onclick = function (event) {
   }
 };
 
-let music = new Audio("Audio/mixkit-jumping-around-8.mp3");
+let track1 = new Audio("Audio/mixkit-jumping-around-8.mp3");
+let track2 = new Audio("Audio/mixkit-a-happy-child-532.mp3");
+let track3 = new Audio("Audio/mixkit-at-the-playhouse-821.mp3");
+let track4 = new Audio("Audio/mixkit-fun-and-games-6.mp3");
+let track5 = new Audio("Audio/mixkit-playground-fun-12.mp3");
 const playButton = document.getElementById("playButton");
 const playButtonDisabled = document.getElementById("playButtonDisabled");
 const pauseButton = document.getElementById("pauseButton");
@@ -510,8 +555,130 @@ const pauseButtonDisabled = document.getElementById("pauseButtonDisabled");
 const stopButtonDisabled = document.getElementById("stopButtonDisabled");
 const stopButton = document.getElementById("stopButton");
 
+let trackSelector = 1;
+let tracks = document.getElementById("musicCh");
+tracks.addEventListener("click", function () {
+  switch (tracks.value) {
+    case "Jumping Around":
+      trackSelector = 1;
+      track1.pause();
+      track1.currentTime = 0;
+      track2.pause();
+      track2.currentTime = 0;
+      track3.pause();
+      track3.currentTime = 0;
+      track4.pause();
+      track4.currentTime = 0;
+      track5.pause();
+      track5.currentTime = 0;
+      stopButton.style.display = "none";
+      stopButtonDisabled.style.display = "inline-block";
+      playButton.style.display = "inline-block";
+      playButtonDisabled.style.display = "none";
+      pauseButton.style.display = "none";
+      pauseButtonDisabled.style.display = "inline-block";
+      break;
+    case "A Happy Child":
+      trackSelector = 2;
+      track1.pause();
+      track1.currentTime = 0;
+      track2.pause();
+      track2.currentTime = 0;
+      track3.pause();
+      track3.currentTime = 0;
+      track4.pause();
+      track4.currentTime = 0;
+      track5.pause();
+      track5.currentTime = 0;
+      stopButton.style.display = "none";
+      stopButtonDisabled.style.display = "inline-block";
+      playButton.style.display = "inline-block";
+      playButtonDisabled.style.display = "none";
+      pauseButton.style.display = "none";
+      pauseButtonDisabled.style.display = "inline-block";
+      break;
+    case "At The Playhouse":
+      trackSelector = 3;
+      track1.pause();
+      track1.currentTime = 0;
+      track2.pause();
+      track2.currentTime = 0;
+      track3.pause();
+      track3.currentTime = 0;
+      track4.pause();
+      track4.currentTime = 0;
+      track5.pause();
+      track5.currentTime = 0;
+      stopButton.style.display = "none";
+      stopButtonDisabled.style.display = "inline-block";
+      playButton.style.display = "inline-block";
+      playButtonDisabled.style.display = "none";
+      pauseButton.style.display = "none";
+      pauseButtonDisabled.style.display = "inline-block";
+      break;
+    case "Fun And Games":
+      trackSelector = 4;
+      track1.pause();
+      track1.currentTime = 0;
+      track2.pause();
+      track2.currentTime = 0;
+      track3.pause();
+      track3.currentTime = 0;
+      track4.pause();
+      track4.currentTime = 0;
+      track5.pause();
+      track5.currentTime = 0;
+      stopButton.style.display = "none";
+      stopButtonDisabled.style.display = "inline-block";
+      playButton.style.display = "inline-block";
+      playButtonDisabled.style.display = "none";
+      pauseButton.style.display = "none";
+      pauseButtonDisabled.style.display = "inline-block";
+      break;
+    case "Playground Fun":
+      trackSelector = 5;
+      track1.pause();
+      track1.currentTime = 0;
+      track2.pause();
+      track2.currentTime = 0;
+      track3.pause();
+      track3.currentTime = 0;
+      track4.pause();
+      track4.currentTime = 0;
+      track5.pause();
+      track5.currentTime = 0;
+      stopButton.style.display = "none";
+      stopButtonDisabled.style.display = "inline-block";
+      playButton.style.display = "inline-block";
+      playButtonDisabled.style.display = "none";
+      pauseButton.style.display = "none";
+      pauseButtonDisabled.style.display = "inline-block";
+      break;
+    default:
+      break;
+  }
+});
+
 playButton.addEventListener("click", function () {
-  music.play();
+  switch (trackSelector) {
+    case 1:
+      track1.play();
+      break;
+    case 2:
+      track2.play();
+      break;
+    case 3:
+      track3.play();
+      break;
+    case 4:
+      track4.play();
+      break;
+    case 5:
+      track5.play();
+      break;
+    default:
+      break;
+  }
   playButton.style.display = "none";
   playButtonDisabled.style.display = "inline-block";
   pauseButtonDisabled.style.display = "none";
@@ -520,23 +687,53 @@ playButton.addEventListener("click", function () {
   stopButtonDisabled.style.display = "none";
 });
 
-music.onended = function () {
-  // playButton.style.display = "inline-block";
-  // playButtonDisabled.style.display = "none";
-  // pauseButtonDisabled.style.display = "inline-block";
-  // pauseButton.style.display = "none";
-  music.play();
-};
+// music.onended = function () {
+//   // playButton.style.display = "inline-block";
+//   // playButtonDisabled.style.display = "none";
+//   // pauseButtonDisabled.style.display = "inline-block";
+//   // pauseButton.style.display = "none";
+//   switch (trackSelector) {
+//     case 1:
+//       track1.play();
+//       break;
+//     case 2:
+//       track2.play();
+//       break;
+//     case 3:
+//       track3.play();
+//       break;
+//     case 4:
+//       track4.play();
+//       break;
+//     case 5:
+//       track5.play();
+//       break;
+//     default:
+//       break;
+//   }
+// };
 pauseButton.addEventListener("click", function () {
   pauseButton.style.display = "none";
   pauseButtonDisabled.style.display = "inline-block";
   playButton.style.display = "inline-block";
   playButtonDisabled.style.display = "none";
-  music.pause();
+  track1.pause();
+  track2.pause();
+  track3.pause();
+  track4.pause();
+  track5.pause();
 });
 stopButton.addEventListener("click", function () {
-  music.pause();
-  music.currentTime = 0;
+  track1.pause();
+  track1.currentTime = 0;
+  track2.pause();
+  track2.currentTime = 0;
+  track3.pause();
+  track3.currentTime = 0;
+  track4.pause();
+  track4.currentTime = 0;
+  track5.pause();
+  track5.currentTime = 0;
   stopButton.style.display = "none";
   stopButtonDisabled.style.display = "inline-block";
   playButton.style.display = "inline-block";
