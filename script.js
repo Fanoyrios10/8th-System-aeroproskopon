@@ -299,7 +299,7 @@ if (time.length === 10) {
 }
 
 if (
-  (hour >= 8 && amPm === "PM") ||
+  (hour >= 8 && amPm === "PM" && hour <= 11) ||
   (hour <= 6 && amPm === "AM") ||
   (hour === 12 && amPm === "AM")
 ) {
