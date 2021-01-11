@@ -198,6 +198,23 @@ body,
   text-align: center;
   padding-top: 200px;
 }
+@media screen and (min-height: 1283px) and (max-width: 1000px) {
+  .picture_container {
+    padding-top: 400px;
+  }
+  .bottomStripe {
+    font-size: 18px;
+  }
+  .contactInformation {
+    font-size: 14px;
+  }
+  .bottomStripeCenterText {
+    font-size: 14px;
+  }
+  .bottomStripeRight p {
+    font-size: 14px;
+  }
+}
 .house_img {
   width: 800px;
   height: 400px;
