@@ -144,6 +144,8 @@ const greenTableC = [
 ];
 let chooseSomething = document.getElementById("choose_something_text");
 
+// create red table and add event listener --> make the text appear
+
 for (let index = 0; index < redTableC.length; index++) {
   let x = index + 1;
   let trc = document.createElement("tr");
@@ -168,8 +170,11 @@ for (let index = 0; index < redTableC.length; index++) {
       element.style.display = "none";
     }
     redItemId.style.display = "block";
+    location.href = `#red${redIndexIdFinalNumber}`;
   });
 }
+
+// create brown table and add event listener --> make the text appear
 
 for (let index = 0; index < brownTableC.length; index++) {
   let x = index + 1;
@@ -195,8 +200,11 @@ for (let index = 0; index < brownTableC.length; index++) {
       element.style.display = "none";
     }
     brownItemId.style.display = "block";
+    location.href = `#brown${brownIndexIdFinalNumber}`;
   });
 }
+
+// create blue table and add event listener --> make the text appear
 
 for (let index = 0; index < blueTableC.length; index++) {
   let x = index + 1;
@@ -222,8 +230,11 @@ for (let index = 0; index < blueTableC.length; index++) {
       element.style.display = "none";
     }
     blueItemId.style.display = "block";
+    location.href = `#blue${blueIndexIdFinalNumber}`;
   });
 }
+
+// create gray table and add event listener --> make the text appear
 
 for (let index = 0; index < grayTableC.length; index++) {
   let x = index + 1;
@@ -249,8 +260,11 @@ for (let index = 0; index < grayTableC.length; index++) {
       element.style.display = "none";
     }
     grayItemId.style.display = "block";
+    location.href = `#gray${grayIndexIdFinalNumber}`;
   });
 }
+
+// create green table and add event listener --> make the text appear
 
 for (let index = 0; index < greenTableC.length; index++) {
   let x = index + 1;
@@ -276,6 +290,7 @@ for (let index = 0; index < greenTableC.length; index++) {
       element.style.display = "none";
     }
     greenItemId.style.display = "block";
+    location.href = `#green${greenIndexIdFinalNumber}`;
   });
 }
 
