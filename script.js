@@ -568,7 +568,6 @@ span.onclick = function () {
     element.style.display = "none";
   }
   chooseSomething.style.display = "block";
-  window.location.href = "#";
 };
 
 window.onclick = function (event) {
@@ -583,7 +582,7 @@ window.onclick = function (event) {
       element.style.display = "none";
     }
     chooseSomething.style.display = "block";
-    window.location.href = "#";
+    window.location.href = "#c";
   }
 };
 
