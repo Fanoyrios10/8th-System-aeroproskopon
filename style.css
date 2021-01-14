@@ -315,6 +315,9 @@ th {
   font-size: x-large;
 }
 
+a {
+  color: black;
+}
 tr:nth-child(odd) {
   background-color: tomato;
 }
@@ -323,14 +326,24 @@ tr:nth-child(even) {
 }
 
 tr:hover:nth-child(odd) {
-  color: white;
   background-color: black;
+  color: white;
+  transition: 1.5s;
+}
+
+tr:hover:nth-child(odd) a {
+  color: white;
   transition: 1.5s;
 }
 
 tr:hover:nth-child(even) {
   color: red;
   background-color: blue;
+  transition: 1.5s;
+}
+
+tr:hover:nth-child(even) a {
+  color: red;
   transition: 1.5s;
 }
 

@@ -152,13 +152,19 @@ for (let index = 0; index < redTableC.length; index++) {
   let tdOne = document.createElement("td");
   tdOne.innerHTML = x;
   let tdTwo = document.createElement("td");
-  tdTwo.innerHTML = redTableC[index];
+  let tdTwoLink = document.createElement("a");
+  tdTwoLink.innerHTML = redTableC[index];
   tdTwo.id = "red_table_index_" + 0 + x;
-  tdTwo.style.cursor = "pointer";
+  let redIndexId = tdTwo.id;
+  let redIndexIdFinalNumber = redIndexId.substr(redIndexId.length - 2);
+  tdTwoLink.href = `#red${redIndexIdFinalNumber}`;
+  tdTwoLink.style.cursor = "pointer";
+  tdTwoLink.style.textDecoration = "none";
   trc.appendChild(tdOne);
   trc.appendChild(tdTwo);
+  tdTwo.appendChild(tdTwoLink);
   document.getElementById("red_table_i").appendChild(trc);
-  tdTwo.addEventListener("click", function () {
+  tdTwoLink.addEventListener("click", function () {
     let redIndexId = tdTwo.id;
     let redIndexIdFinalNumber = redIndexId.substr(redIndexId.length - 2);
     let redItemId = document.getElementById(
@@ -170,7 +176,6 @@ for (let index = 0; index < redTableC.length; index++) {
       element.style.display = "none";
     }
     redItemId.style.display = "block";
-    location.href = `#red${redIndexIdFinalNumber}`;
   });
 }
 
@@ -182,13 +187,19 @@ for (let index = 0; index < brownTableC.length; index++) {
   let tdOne = document.createElement("td");
   tdOne.innerHTML = x;
   let tdTwo = document.createElement("td");
-  tdTwo.innerHTML = brownTableC[index];
+  let tdTwoLink = document.createElement("a");
+  tdTwoLink.innerHTML = brownTableC[index];
   tdTwo.id = "brown_table_index_" + 0 + x;
-  tdTwo.style.cursor = "pointer";
+  let brownIndexId = tdTwo.id;
+  let brownIndexIdFinalNumber = brownIndexId.substr(brownIndexId.length - 2);
+  tdTwoLink.href = `#brown${brownIndexIdFinalNumber}`;
+  tdTwoLink.style.cursor = "pointer";
+  tdTwoLink.style.textDecoration = "none";
   trc.appendChild(tdOne);
   trc.appendChild(tdTwo);
+  tdTwo.appendChild(tdTwoLink);
   document.getElementById("brown_table_i").appendChild(trc);
-  tdTwo.addEventListener("click", function () {
+  tdTwoLink.addEventListener("click", function () {
     let brownIndexId = tdTwo.id;
     let brownIndexIdFinalNumber = brownIndexId.substr(brownIndexId.length - 2);
     let brownItemId = document.getElementById(
@@ -200,7 +211,6 @@ for (let index = 0; index < brownTableC.length; index++) {
       element.style.display = "none";
     }
     brownItemId.style.display = "block";
-    location.href = `#brown${brownIndexIdFinalNumber}`;
   });
 }
 
@@ -212,13 +222,19 @@ for (let index = 0; index < blueTableC.length; index++) {
   let tdOne = document.createElement("td");
   tdOne.innerHTML = x;
   let tdTwo = document.createElement("td");
-  tdTwo.innerHTML = blueTableC[index];
+  let tdTwoLink = document.createElement("a");
+  tdTwoLink.innerHTML = blueTableC[index];
   tdTwo.id = "blue_table_index_" + 0 + x;
-  tdTwo.style.cursor = "pointer";
+  let blueIndexId = tdTwo.id;
+  let blueIndexIdFinalNumber = blueIndexId.substr(blueIndexId.length - 2);
+  tdTwoLink.href = `#blue${blueIndexIdFinalNumber}`;
+  tdTwoLink.style.cursor = "pointer";
+  tdTwoLink.style.textDecoration = "none";
   trc.appendChild(tdOne);
   trc.appendChild(tdTwo);
+  tdTwo.appendChild(tdTwoLink);
   document.getElementById("blue_table_i").appendChild(trc);
-  tdTwo.addEventListener("click", function () {
+  tdTwoLink.addEventListener("click", function () {
     let blueIndexId = tdTwo.id;
     let blueIndexIdFinalNumber = blueIndexId.substr(blueIndexId.length - 2);
     let blueItemId = document.getElementById(
@@ -230,7 +246,6 @@ for (let index = 0; index < blueTableC.length; index++) {
       element.style.display = "none";
     }
     blueItemId.style.display = "block";
-    location.href = `#blue${blueIndexIdFinalNumber}`;
   });
 }
 
@@ -242,13 +257,19 @@ for (let index = 0; index < grayTableC.length; index++) {
   let tdOne = document.createElement("td");
   tdOne.innerHTML = x;
   let tdTwo = document.createElement("td");
-  tdTwo.innerHTML = grayTableC[index];
+  let tdTwoLink = document.createElement("a");
+  tdTwoLink.innerHTML = grayTableC[index];
   tdTwo.id = "gray_table_index_" + 0 + x;
-  tdTwo.style.cursor = "pointer";
+  let grayIndexId = tdTwo.id;
+  let grayIndexIdFinalNumber = grayIndexId.substr(grayIndexId.length - 2);
+  tdTwoLink.href = `#gray${grayIndexIdFinalNumber}`;
+  tdTwoLink.style.cursor = "pointer";
+  tdTwoLink.style.textDecoration = "none";
   trc.appendChild(tdOne);
   trc.appendChild(tdTwo);
+  tdTwo.appendChild(tdTwoLink);
   document.getElementById("gray_table_i").appendChild(trc);
-  tdTwo.addEventListener("click", function () {
+  tdTwoLink.addEventListener("click", function () {
     let grayIndexId = tdTwo.id;
     let grayIndexIdFinalNumber = grayIndexId.substr(grayIndexId.length - 2);
     let grayItemId = document.getElementById(
@@ -272,13 +293,19 @@ for (let index = 0; index < greenTableC.length; index++) {
   let tdOne = document.createElement("td");
   tdOne.innerHTML = x;
   let tdTwo = document.createElement("td");
-  tdTwo.innerHTML = greenTableC[index];
+  let tdTwoLink = document.createElement("a");
+  tdTwoLink.innerHTML = greenTableC[index];
   tdTwo.id = "green_table_index_" + 0 + x;
-  tdTwo.style.cursor = "pointer";
+  let greenIndexId = tdTwo.id;
+  let greenIndexIdFinalNumber = greenIndexId.substr(greenIndexId.length - 2);
+  tdTwoLink.href = `#green${greenIndexIdFinalNumber}`;
+  tdTwoLink.style.cursor = "pointer";
+  tdTwoLink.style.textDecoration = "none";
   trc.appendChild(tdOne);
   trc.appendChild(tdTwo);
+  tdTwo.appendChild(tdTwoLink);
   document.getElementById("green_table_i").appendChild(trc);
-  tdTwo.addEventListener("click", function () {
+  tdTwoLink.addEventListener("click", function () {
     let greenIndexId = tdTwo.id;
     let greenIndexIdFinalNumber = greenIndexId.substr(greenIndexId.length - 2);
     let greenItemId = document.getElementById(
