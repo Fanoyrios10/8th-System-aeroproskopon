@@ -167,10 +167,10 @@ body,
 #cloud-intro {
   position: relative;
   height: 100%;
-  background: url(Images/clouds1000.png);
-  background: url(Images/clouds1000.png) 0 200px,
-    url(Images/clouds1200_1.png) 0 300px,
-    url(Images/clouds1000_blur3.png) 100px 250px;
+  background: url(Images/clouds1000.webp);
+  background: url(Images/clouds1000.webp) 0 200px,
+    url(Images/clouds1200_1.webp) 0 300px,
+    url(Images/clouds1000_blur3.webp) 100px 250px;
   animation: wind 20s linear infinite;
 }
 @keyframes wind {
@@ -254,7 +254,7 @@ body,
 }
 
 .modal-content {
-  background-image: url(Images/open_book_2.jpg);
+  background-image: url(Images/open_book_2.webp);
   margin: auto;
   background-position: initial;
   background-repeat: no-repeat;
@@ -388,7 +388,7 @@ h2 {
   font-size: xx-large;
 }
 area {
-  cursor: url("Images/pin.png"), auto;
+  cursor: url("Images/pin.webp"), auto;
 }
 #house_modal_2 {
   display: none;
