@@ -1,18 +1,21 @@
 @font-face {
   font-family: Comic Sans MS;
   src: url("font/comic.ttf");
+  font-display: block;
 }
 
 @font-face {
   font-family: Comic Sans MS;
   font-weight: bold;
   src: url("font/comicbd.ttf");
+  font-display: block;
 }
 
 @font-face {
   font-family: Comic Sans MS;
   font-style: italic;
   src: url("font/comici.ttf");
+  font-display: block;
 }
 
 @font-face {
@@ -20,6 +23,7 @@
   font-style: italic;
   font-weight: bold;
   src: url("font/comicz.ttf");
+  font-display: block;
 }
 
 html,
